@@ -34,15 +34,20 @@
             <div id="map"></div>
             <div id="listing">
                 <h2>Options</h2>
-                <label for="date">Date</label>
-                <input type="date" id="date">
-                <h2>Suspicious airports</h2>
-                <ul id="delay-airports">
-
-                </ul>
+                <label for="date-select">Date</label>
+                <select id="date-select">
+                    <option value="08-06-2016">08. Juni 2016</option>
+                    <option value="09-06-2016">09. Juni 2016</option>
+                    <option value="10-06-2016">10. Juni 2016</option>
+                    <option value="11-06-2016">11. Juni 2016</option>
+                    <option value="12-06-2016">12. Juni 2016</option>
+                    <option value="13-06-2016">13. Juni 2016</option>
+                    <option selected value="14-06-2016">14. Juni 2016</option>
+                </select>
             </div>
         </div>
 
+        <script src="bower_components/promise-polyfill/promise.js"></script>
         <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
         <script src="bower_components/ajax/dist/ajax.min.js"></script>
         <script src="main.js"></script>
