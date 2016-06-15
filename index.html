@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map visualisierung</title>
+
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+            h1 {
+                text-align: center;
+            }
+            #container {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+            }
+            #map {
+                min-width: 200px;
+                width: 65%;
+                height: 400px;
+            }
+            #listing {
+                min-width: 100px;
+                width: 25%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flight Map</h1>
+        <div id="container">
+            <div id="map"></div>
+            <div id="listing">
+                <h2>Options</h2>
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                <h2>Suspicious airports</h2>
+                <ul id="delay-airports">
+
+                </ul>
+            </div>
+        </div>
+
+        <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+        <script src="bower_components/ajax/dist/ajax.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
